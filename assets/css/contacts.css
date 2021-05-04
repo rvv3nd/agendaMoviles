@@ -1,0 +1,191 @@
+/*
+Palette
+03045E
+023E8A
+0077B6
+0096C7
+00B4D8
+48CAE4
+90E0EF
+*/
+
+html {
+  font-family: "Yusei Magic", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #0096c7;
+}
+a:hover {
+  /* focus, active */
+  opacity: 0.8;
+}
+img {
+  max-width: 100%;
+}
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 200;
+}
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.button{
+  padding: 15px;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  outline: none;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: #77bead; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #429A96,#BC7BAD
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #429A96,#BC7BAD
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 2px 2px 8px 2px #192931bd; /*DifHoriz, difVertic, focus, amplitud, color*/
+  /*box-shadow: 0 3px 6px rgba(0,0,0,0,16), 0 3px 6px rgba(0,0,0,0,23);*/
+  border-radius: 4px;
+  padding: 1em;
+  overflow: scroll; /*hidden, scroll*/
+  /*overflow-x: hidden;*/
+}
+
+td {
+  display: block;
+  
+}
+td:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #0077b6;
+}
+th {
+  display: none;
+}
+.tabla {
+  width: 100%;
+  border-spacing: 0;
+}
+.tabla td,
+.tabla th {
+  padding: 1em;
+  text-align: left;
+}
+.tabla tr:nth-child(even) {
+  background-color: #acd4ee;
+}
+.fa-star {
+  color: rgb(255, 201, 24);
+}
+
+.title-item {
+  /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #0077B6; */
+  border-bottom: solid 2px #0077b6;
+  padding-bottom: 1em;
+
+  /* padding: up right down left;
+  padding: up/down right/left; */
+}
+.mainimg {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+.adr {
+  font-weight: bold;
+  color: #0077b6;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+.position {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.4em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  font-size: 2em;
+}
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: #0077b6;
+  display: inline-block;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #19293194;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  td {
+    width: auto;
+    display: table-cell;
+  }
+  th {
+    display: table-cell;
+  }
+  td:nth-of-type(1) {
+    font-size: 1em;
+  }
+  .content {
+    padding: 1.8em;
+  }
+}
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
+/* especificidad
+
+1. !important
+2. atrib style
+
+Selectores
+1. selectores ID
+2. selectores de clase, atributos y pseudoclases
+3. Selectores de tipo y pseudoelementos 
+*/
+
+/* position
+  -static no se mueve
+  -relative rel a pos inicial
+  -absolute rel al contenedor mas cercano o viewport
+  -fixed relativo al viewport, el scroll no lo afecta
+  -sticky relative o fixed dependiendo si se sale del viewport */
