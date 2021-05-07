@@ -7,6 +7,10 @@ completelist.innerHTML += "<li>Item " + counter + "</li>";
 counter++;
 }
 
+function newContact() {
+    window.location.href = "../pages/addContact.html";
+}
+
 function validatelogin(e){
     var user = document.getElementById("usr").value;
     var pass = document.getElementById("psswrd").value;
