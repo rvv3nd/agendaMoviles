@@ -7,9 +7,6 @@ completelist.innerHTML += "<li>Item " + counter + "</li>";
 counter++;
 }
 
-function newContact() {
-    window.location.href = "../pages/addContact.html";
-}
 
 function validatelogin(e){
     var user = document.getElementById("usr").value;
@@ -21,6 +18,39 @@ function validatelogin(e){
     //}
     return true
 }
+
+function genera_tabla() {
+    
+    //let reader = new FileReader();
+
+    //reader.readAsText(file);
+
+    //reader.onload = function() {
+    //    console.log(reader.result);
+    //};
+    // Obtener la referencia del elemento body
+    //var body = document.getElementById("contentTable");
+    // Crea un elemento <table> y un elemento <tbody>
+    var tabla   = document.getElementById("contentTable");
+    var tblBody = document.getElementById("tableBody");
+  
+    // Crea las celdas
+    for (var i = 0; i < 2; i++) {
+      // Crea las hileras de la tabla
+      var hilera = document.createElement("tr");
+
+        var celda = document.createElement("td");
+        var textoCelda = document.createTextNode("Contacto "+i);
+        celda.appendChild(textoCelda);
+        hilera.appendChild(celda);
+      tblBody.appendChild(hilera);
+    }
+  
+
+    tabla.appendChild(tblBody);
+
+}
+
 
 //let loginb=document.getElementById("loginButton");
 //loginb.addEventListener('click', validatelogin);

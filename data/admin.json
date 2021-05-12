@@ -1,0 +1,27 @@
+{
+    "contacts":[
+        {
+            "avatar" : "http://example.com/image.png",
+            "birthday" : "1998-06-14",
+            "city" : "Tiburon",
+            "phone" : "2221569758",
+            "country" : "USA",
+            "displayName" : "David Taylor",
+            "state" : "CA",
+            "street" : "1747 Steuart Street",
+            "zip" : "94920"
+         },
+         {
+            "avatar" : "http://example.com/image.png",
+            "birthday" : "1998-06-14",
+            "city" : "Tiburon",
+            "phone" : "2221569758",
+            "country" : "USA",
+            "displayName" : "John Smith",
+            "state" : "CA",
+            "street" : "1747 Steuart Street",
+            "zip" : "94920"
+         }
+    ]
+}
+

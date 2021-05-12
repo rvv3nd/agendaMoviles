@@ -13,10 +13,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="content animate__animated animate__zoomIn">
-        <button class="button" onclick="newContact();">Agregar contacto</button>
-        <ul id="thelist"></ul>
+      <div id="contentFrame" class="content animate__animated animate__zoomIn">
+        <table id="contentTable" class="tabla">
+          <tbody id="tableBody">
+            <tr>
+              <td><a href="../pages/addContact.html">Agregar Contacto</a></td>
+            </tr>
+          </tbody>
+        </table>
         <script src="../assets/scripts/main.js"></script>
+        <script type="text/javascript">
+          genera_tabla();
+        </script>
       </div>
     </div>
   </body>
